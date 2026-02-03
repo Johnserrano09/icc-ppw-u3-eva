@@ -29,10 +29,13 @@ public class Department {
     @OneToMany(mappedBy = "department", fetch = FetchType.LAZY)
     private List<Employee> employees = new ArrayList<>();
     
-    // Constructors
+  
     public Department() {
     }
-    
+ 
+
+
+
     public Department(String name, BigDecimal budget, Company company) {
         this.name = name;
         this.budget = budget;
@@ -40,7 +43,8 @@ public class Department {
         this.active = "S";
     }
     
-    // Getters and Setters
+    
+   // Getters and Setters
     public Long getId() {
         return id;
     }

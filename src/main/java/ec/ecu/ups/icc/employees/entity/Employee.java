@@ -30,7 +30,7 @@ public class Employee {
     @JoinColumn(name = "department_id", nullable = false)
     private Department department;
     
-    // Constructors
+    
     public Employee() {
     }
     
@@ -43,7 +43,7 @@ public class Employee {
         this.active = "S";
     }
     
-    // Getters and Setters
+    
     public Long getId() {
         return id;
     }
